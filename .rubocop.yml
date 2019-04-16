@@ -1,0 +1,16 @@
+require: rubocop-rspec
+require: rubocop-performance
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+    - 'api_tm4j_wrapper.gemspec'
+RSpec/ExampleLength:
+  Exclude:
+    - 'spec/**/*_spec.rb'
+Style/PreferredHashMethods:
+  EnforcedStyle: verbose
+Style/WordArray:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
